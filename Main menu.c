@@ -35,19 +35,21 @@ int main()
 void password(void)
 {
     system("cls");
+     system("cls");
+    system("COLOR F2");
     char ch, pin[20]="hello",pass[20];
     int i=0,j;
  gotoab(29,4);
-  printf("********");
-    gotoab(20,5);
-    printf("****Password Proctected****");
-  gotoab(29,7);
-  printf("********");
+  printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+    gotoab(29,5);
+    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Password Protected \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+  gotoab(29,6);
+  printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
 
    gotoab(30,15);
-  printf("_____________");
-    gotoab(31,16);
-    printf("Enter Password: ");
+  printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+    gotoab(30,16);
+    printf("\xB2-\xB2-\xB2 Enter Password: ");
 
     while(ch!=13)
     {
@@ -64,6 +66,8 @@ void password(void)
     if(strcmp(pass,pin)==0)
     {
         gotoab(40,20);
+         system("cls");
+    system("COLOR F3");
         printf("Password Match");
         gotoab(35,21);
         printf("Press any key to countinue.....");
@@ -73,6 +77,8 @@ void password(void)
     else
     {
         gotoab(35,20);
+         system("cls");
+    system("COLOR F4");
         printf("\aWarning!! Incorrect Password.");
           gotoab(35,21);
         printf("\aTry again");
@@ -85,28 +91,27 @@ void mainmenu()
 {
     system("cls");
     gotoab(20,3);
-    printf("\xB2\xB2____This is MAIN MENU___\xB2\xB2");
+    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 MAIN MENU \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
 
     gotoab(20,5);
-    printf("1. E-Book");
+    printf("1. Study");
     gotoab(20,7);
     printf("2. Game");
     gotoab(20,9);
     printf("3. Class routine");
     gotoab(20,11);
-    printf("4. Movie suggetion");
+    printf("4. Calculator");
     gotoab(20,13);
     printf("5. To-Do list");
     gotoab(20,15);
     printf("6. Dua");
-
     gotoab(20,21);
     printf("Enter your choice:");
 
     switch(getch())
         {
         case '1':
-            addbooks();
+            study();
             break;
          case '2':
             game();
@@ -115,7 +120,7 @@ void mainmenu()
             classRoutine();
             break;
             case '4':
-            movieSuggetion();
+            calculator();
             break;
             case '5':
             toDoList();
@@ -126,11 +131,11 @@ void mainmenu()
         }
 
 }
-void addbooks(void)
+void study(void)
 {
     system("cls");
      gotoab(20,3);
-    printf("This is E-Book option");
+    printf("This is study option");
 }
 void game(void)
 {
@@ -143,6 +148,8 @@ void classRoutine(void)
 
 {
     gotoab(30,1);
+     system("cls");
+    system("COLOR F3");
   printf("********");
     gotoab(23,2);
     printf("****Class Routine****");
@@ -176,17 +183,17 @@ void classRoutine(void)
 
 }
 
-void movieSuggetion(void)
+void calculator(void)
 {
     system("cls");
      gotoab(20,3);
-    printf("This is  Movie suggetion option");
+    printf("This is  calculator option");
 }
 
 void toDoList(void)
 {
   system("cls");
-    // system("COLOR F2");
+    system("COLOR F2");
     int i;
     gotoab(20, 3);
     printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 My Daily Activities ");
@@ -346,4 +353,3 @@ void dua(void)
      gotoab(20,3);
     printf("This is  Dua option");
 }
-
